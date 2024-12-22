@@ -133,7 +133,7 @@ body {
         3px 3px 12px rgba(0,0,0,0.15),
         inset 0 -40px 40px rgba(0,0,0,0.02);
     font-family: 'Caveat', cursive;
-    font-size: 1.3em;
+    font-size: 1.1em; /* Reduzido de 1.3em */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -146,26 +146,35 @@ body {
     overflow: hidden;
     margin: 25px;  /* Aumentar margem para acomodar as fitas */
     z-index: 1;    /* Garantir que o post-it fique acima do quadro */
+    height: auto;
+    min-height: 220px;
+    max-height: 280px;
 }
 
 .post-it .content {
     flex-grow: 1;
     display: flex;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 1em; /* Reduzido de 1.2em */
     line-height: 1.4;
     color: #2c3e50;
     opacity: 0;
     transition: opacity 0.3s ease;
+    padding: 5px; /* Reduzido de 10px */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-height: 140px; /* Reduzido de 160px */
+    overflow: hidden;
+    margin: 5px;
 }
 
 .post-it .signature {
-    font-size: 1.1em;
+    font-size: 0.9em; /* Reduzido de 1.1em */
     font-weight: bold;
     align-self: flex-end;
     color: #34495e;
     font-style: italic;
-    margin-top: 10px;
+    margin-top: 5px; /* Reduzido de 10px */
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -1835,56 +1844,16 @@ body {
     }
 }
 
-/* Estilos personalizados para cada assinatura */
-[data-author="milenny"] .content {
-    font-family: 'Homemade Apple', cursive;
-    font-size: 1.1em;
-    opacity: 1 !important;
-}
-
-[data-author="milenny"] .signature {
-    font-family: 'Homemade Apple', cursive;
-    font-size: 1em;
-    opacity: 1 !important;
-    color: #7b1fa2;
-}
-
-[data-author="kellyson"] .content {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.4em;
-    opacity: 1 !important;
-}
-
-[data-author="kellyson"] .signature {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.2em;
-    opacity: 1 !important;
-    color: #1976d2;
-}
-
-[data-author="otavio"] .content {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 1.2em;
-    opacity: 1 !important;
-}
-
-[data-author="otavio"] .signature {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 1.1em;
-    opacity: 1 !important;
-    color: #f9a825;
-}
-
 /* Personalização das cartas */
 .letter-content[data-author="milenny"] {
-    font-family: 'Homemade Apple', cursive;
-    font-size: 1.1em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
     line-height: 2;
 }
 
 .letter-content[data-author="kellyson"] {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.4em;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 1.1em;
     line-height: 1.8;
 }
 
@@ -1896,13 +1865,13 @@ body {
 
 /* Personalização dos cartões raspáveis */
 .scratch-message.kellyson-message {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.6em;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 1.3em;
 }
 
 .scratch-message.milenny-message {
-    font-family: 'Homemade Apple', cursive;
-    font-size: 1.3em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6em;
 }
 
 .scratch-message.otavio-message {
@@ -1912,13 +1881,86 @@ body {
 
 /* Personalização das assinaturas finais */
 .signature-milenny {
-    font-family: 'Homemade Apple', cursive !important;
+    font-family: 'Dancing Script', cursive !important;
 }
 
 .signature-kellyson {
-    font-family: 'Dancing Script', cursive !important;
+    font-family: 'Homemade Apple', cursive !important;
 }
 
 .signature-otavio {
     font-family: 'Permanent Marker', cursive !important;
+}
+
+/* Ajuste dos stickers */
+.floating-sticker {
+    max-width: 100px; /* Reduzir tamanho dos stickers */
+    height: auto;
+    position: absolute;
+    z-index: 2;
+}
+
+.hp-sticker {
+    top: -30px;
+    right: -20px;
+    transform: rotate(15deg);
+}
+
+.cute-sticker {
+    top: -25px;
+    left: -25px;
+    transform: rotate(-10deg);
+}
+
+.king-sticker {
+    top: -35px;
+    right: -15px;
+    transform: rotate(10deg);
+}
+
+.magical-sticker {
+    top: -30px;
+    left: -20px;
+    transform: rotate(-15deg);
+}
+
+/* Trocar as fontes entre Kellyson e Milenny */
+[data-author="milenny"] .content {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em; /* Reduzido de 1.4em */
+}
+
+[data-author="milenny"] .signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1em; /* Reduzido de 1.2em */
+}
+
+[data-author="kellyson"] .content {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 0.9em; /* Reduzido de 1.1em */
+}
+
+[data-author="kellyson"] .signature {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 0.8em; /* Reduzido de 1em */
+}
+
+/* Ajuste da imagem do livro favorito */
+.favorite-book-image {
+    max-width: 300px;
+    height: auto;
+    margin: 40px auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+[data-author="otavio"] .content {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 0.9em; /* Reduzido de 1.2em */
+}
+
+[data-author="otavio"] .signature {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 0.9em; /* Reduzido de 1.1em */
 }
