@@ -113,6 +113,12 @@ function setupEnvelopes() {
         3: "Querida Helo,\n\n💜 Seu sorriso ilumina nossos dias. Sua criatividade e carinho tornam tudo mais especial e mágico.\n\nBeijos,\nMilenny 🌟"
     };
 
+    const authors = {
+        1: "kellyson",
+        2: "otavio",
+        3: "milenny"
+    };
+
     document.querySelectorAll('.envelope').forEach(envelope => {
         if (envelope) {
             envelope.addEventListener('click', () => {
@@ -123,6 +129,7 @@ function setupEnvelopes() {
                 
                 if (letterContent && modalOverlay && content) {
                     letterContent.innerText = content;
+                    letterContent.dataset.author = authors[letterId]; // Adiciona o autor
                     modalOverlay.classList.add('active');
                     setTimeout(() => {
                         const letter = document.querySelector('.letter');
