@@ -1670,6 +1670,7 @@ body {
     [data-aos] {
         opacity: 1 !important;
         transform: none !important;
+        transition: none !important;
     }
 
     .favorite-memory-section,
@@ -1916,6 +1917,8 @@ body {
     top: -35px;
     right: -15px;
     transform: rotate(10deg);
+    max-width: 80px; /* Reduzido de 100px */
+    z-index: 1; /* Garantir que fique atrás do conteúdo */
 }
 
 .magical-sticker {
@@ -1963,4 +1966,37 @@ body {
 [data-author="otavio"] .signature {
     font-family: 'Permanent Marker', cursive;
     font-size: 0.9em; /* Reduzido de 1.1em */
+}
+
+/* Otimizar animações para mobile */
+@media (max-width: 768px) {
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .post-it {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    /* Ajustar velocidade de revelação dos post-its */
+    .post-it.revealed .content,
+    .post-it.revealed .signature {
+        transition: opacity 0.2s ease;
+    }
+
+    /* Remover animações em mobile */
+    .post-it:hover,
+    .polaroid:hover,
+    .envelope:hover {
+        transform: none !important;
+        animation: none !important;
+    }
+
+    /* Ajustar layout dos post-its em mobile */
+    .post-its-container {
+        gap: 15px;
+    }
 }
