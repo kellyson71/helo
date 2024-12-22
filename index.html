@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Quadro de Post-its</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+    <main class="container-fluid py-4">
+        <div class="welcome-section" data-aos="fade-up">
+            <img src="stiker/cute-harry-potter-512x512.png" alt="Harry Potter Sticker" class="floating-sticker hp-sticker">
+            <div class="welcome-card">
+                <h2 class="welcome-title">Querida Maria Heloísa ✨</h2>
+                <p class="welcome-text">
+                    Assim como seus pais, decidimos unir seu presente de Natal e aniversário em algo especial.
+                    Este é nosso jeito de expressar todo o carinho que temos por você.
+                    Esperamos que este pequeno presente digital traga um sorriso ao seu rosto, assim como você sempre traz alegria aos nossos dias.
+                </p>
+                <div class="welcome-signature">
+                    Com muito carinho,<br>
+                    <span class="signatures">
+                        <span class="signature-kellyson">Kellyson</span> • 
+                        <span class="signature-milenny">Milenny</span> • 
+                        <span class="signature-otavio">Otavio</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="blackboard">
+            <img src="stiker/352c3f102415891.5f35cd740db4c.png" alt="Cute Sticker" class="floating-sticker cute-sticker">
+            <h1 class="board-title">Querida Helo ❤️</h1>
+            
+            <div class="post-its-container">
+                <div class="post-it" style="transform: rotate(-4deg);" data-aos="fade-up" data-author="kellyson">
+                    <div class="tape tape-top"></div>
+                    <div class="content">
+                        Sua alegria contagiante faz qualquer dia ficar mais bonito! ✨
+                    </div>
+                    <div class="signature">- Kellyson</div>
+                </div>
+                <div class="post-it" style="transform: rotate(3deg);" data-aos="fade-up" data-aos-delay="100" data-author="otavio">
+                    <div class="tape tape-top"></div>
+                    <div class="content">
+                        Sua dedicação e carinho com todos é inspirador! 💖
+                    </div>
+                    <div class="signature">- Otavio</div>
+                </div>
+                <div class="post-it" style="transform: rotate(-2deg);" data-aos="fade-up" data-aos-delay="200" data-author="milenny">
+                    <div class="tape tape-top"></div>
+                    <div class="content">
+                        Você tem o dom de fazer todos se sentirem especiais! 🌟
+                    </div>
+                    <div class="signature">- Milenny</div>
+                </div>
+                <div class="post-it" style="transform: rotate(5deg);" data-aos="fade-up" data-aos-delay="300" data-author="kellyson">
+                    <div class="tape tape-top"></div>
+                    <div class="content">
+                        Sua força e determinação são admiráveis! 💪
+                    </div>
+                    <div class="signature">- Kellyson</div>
+                </div>
+                <!-- Novos post-its -->
+                <div class="post-it" style="transform: rotate(-3deg);" data-aos="fade-up" data-aos-delay="400" data-author="milenny">
+                    <div class="tape tape-top"></div>
+                    <div class="content">
+                        Seu sorriso ilumina todos os ambientes! 🌞
+                    </div>
+                    <div class="signature">- Milenny</div>
+                </div>
+                <div class="post-it" style="transform: rotate(4deg);" data-aos="fade-up" data-aos-delay="500" data-author="otavio">
+                    <div class="tape tape-top"></div>
+                    <div class="content">
+                        A melhor pessoa para se ter por perto! 🤗
+                    </div>
+                    <div class="signature">- Otavio</div>
+                </div>
+                <div class="post-it" style="transform: rotate(-5deg);" data-aos="fade-up" data-aos-delay="600" data-author="kellyson">
+                    <div class="tape tape-top"></div>
+                    <div class="content">
+                        Seu coração gigante nos inspira! 💝
+                    </div>
+                    <div class="signature">- Kellyson</div>
+                </div>
+                <div class="post-it" style="transform: rotate(2deg);" data-aos="fade-up" data-aos-delay="700" data-author="milenny">
+                    <div class="tape tape-top"></div>
+                    <div class="content">
+                        Sua amizade é um presente! 🎁
+                    </div>
+                    <div class="signature">- Milenny</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="envelopes-container">
+            <div class="envelope-container">
+                <div class="tape"></div>
+                <div class="envelope" data-letter="1"></div>
+                <div class="envelope-signature">Com amor, Kellyson</div>
+            </div>
+            <div class="envelope-container">
+                <div class="tape"></div>
+                <div class="envelope" data-letter="2"></div>
+                <div class="envelope-signature">Carinhosamente, Otavio</div>
+            </div>
+            <div class="envelope-container">
+                <div class="tape"></div>
+                <div class="envelope" data-letter="3"></div>
+                <div class="envelope-signature">Beijos, Milenny</div>
+            </div>
+        </div>
+
+        <!-- Seção do Cartão Raspável -->
+        <div class="scratch-card-section" data-aos="fade-up">
+            <h2 class="scratch-title">Mensagens Especiais</h2>
+            <p class="scratch-instructions">Raspe para revelar as surpresas! ✨</p>
+            <div class="scratch-cards-container">
+                <div class="scratch-card-container">
+                    <div class="scratch-message kellyson-message">Kellyson te ama! 💙</div>
+                    <canvas class="scratch-card"></canvas>
+                </div>
+                <div class="scratch-card-container">
+                    <div class="scratch-message milenny-message">Milenny te ama! 💜</div>
+                    <canvas class="scratch-card"></canvas>
+                </div>
+                <div class="scratch-card-container">
+                    <div class="scratch-message otavio-message">Otavio te ama! 💛</div>
+                    <canvas class="scratch-card"></canvas>
+                </div>
+            </div>
+            <p class="scratch-footer">Te amamos muito! 💝</p>
+        </div>
+
+        <div class="music-section">
+            <img src="stiker/owl-house-king-tie-512x512.png" alt="King Sticker" class="floating-sticker king-sticker">
+            <h2 class="music-title">A música que nos lembra você ✨</h2>
+            <div class="spotify-container">
+                <iframe 
+                    style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/4d0DpU7Odiv0ztvX2GxJlk?utm_source=generator&theme=0" 
+                    width="100%" 
+                    height="152" 
+                    frameBorder="0"
+                    sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-presentation"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="photos-section">
+            <img src="stiker/dbcdadb2-9409-4887-8e34-b5ac9d247b68.png" alt="Magical Sticker" class="floating-sticker magical-sticker">
+            <div class="string-line"></div>
+            <div class="polaroid-container">
+                <div class="polaroid">
+                    <img src="./Photos/20220701_114329.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">O início de tudo em 2022...</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/20220703_121238.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">Nosso primeiro rolê oficial... kkkk</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/20220703_170839.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">Continuação do UNO</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/20220707_090400.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">Momentos aleatórios nos corredores do IF</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/20221229_084000.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">Seu aniversário com todos nós! 🎂</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/20230124_162313.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">Festival de Música</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/20230622_105852.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">Gazeando aula... kkkk</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/558499440317_status_76cc9ba804ef4444af33426348754ec3.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">São João 2023, com todos</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/IMG_20231226_211340.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">Sempre folgada...</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/IMG_20240118_200452.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">Temos que fazer isso mais vezes (sério)</div>
+                </div>
+
+                <div class="polaroid">
+                    <img src="./Photos/IMG_20240310_200253.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">Aniversário do Otávio com todos</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/IMG_20240310_224155.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">Você nos obrigando a beber, tenha vergonha!</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/IMG_20240508_105721.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">Surpresa no aniversário do Kellyson kkkk</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/IMG_20240704_115818.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">😯💍</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./Photos/IMG-20230209-WA0186.jpg" alt="Memória com Helo">
+                    <div class="polaroid-caption">Você tá no nosso coração</div>
+                </div>
+                <div class="polaroid special-drawing" data-aos="fade-up" data-aos-delay="100">
+                    <img src="./Photos/desen.png" alt="Desenho para Helo">
+                    <div class="polaroid-caption">✨🎨💝</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nova seção de Memória Favorita -->
+        <div class="favorite-memory-section" data-aos="fade-up">
+            <h2 class="memory-title">✨ Nossa Memória Favorita ✨</h2>
+            <div class="memory-card">
+                <div class="memory-content">
+                    <img src="./Photos/memo.png" alt="Memória Especial" class="hidden-memory">
+                    <div class="memory-overlay">
+                        <span class="reveal-text">Clique para revelar</span>
+                        <span class="memory-icon">🎁</span>
+                    </div>
+                </div>
+                <p class="memory-caption">Um momento muito especial guardado com carinho 💝</p>
+            </div>
+        </div>
+
+        <!-- Seção de Coração de Palavras -->
+        <div class="heart-message-section" data-aos="fade-up">
+            <div class="message-card">
+                <div class="message-content">
+                    <i class="fas fa-heart message-icon"></i>
+                    <p class="message-text">
+                        Você tá presa com nós.<br>
+                        Não deixaremos você se afastar.<br>
+                        Nem que você queira!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Rostos Flutuantes -->
+        <div class="floating-faces-section" data-aos="fade-up">
+            <h2 class="faces-title">✨ A Turma da Bagunça ✨</h2>
+            <div class="faces-container">
+                <div class="face-sticker" style="--delay: 0s;">
+                    <img src="Rostos/imagem_2024-12-14_212001045 (1).png" alt="Helo">
+                    <span class="face-label">Helo</span>
+                </div>
+                <div class="face-sticker" style="--delay: 0.3s;">
+                    <img src="Rostos/imagem_2024-12-14_211633274.png" alt="Milenny">
+                    <span class="face-label">MJ</span>
+                </div>
+                <div class="face-sticker" style="--delay: 0.6s;">
+                    <img src="Rostos/imagem_2024-12-14_212048284.png" alt="Otavio">
+                    <span class="face-label">Octavios</span>
+                </div>
+                <div class="face-sticker" style="--delay: 0.9s;">
+                    <img src="Rostos/imagem_2024-12-14_212216243.png" alt="Kellyson">
+                    <span class="face-label">kelly kie</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção final de desejos -->
+        <div class="final-wishes-section" data-aos="fade-up">
+            <div class="welcome-card">
+                <h2 class="welcome-title">Feliz Aniversário! 🎂✨</h2>
+                <!-- Nova seção dos rostos dentro do card -->
+                <div class="faces-container">
+                    <div class="face-sticker special-face" style="--delay: 0s;">
+                        <div class="crown">👑</div>
+                        <img src="Rostos/imagem_2024-12-14_212001045 (1).png" alt="Helo">
+                        <span class="face-label">Helo</span>
+                    </div>
+                    <div class="face-sticker" style="--delay: 0.3s;">
+                        <img src="Rostos/imagem_2024-12-14_211633274.png" alt="Milenny">
+                        <span class="face-label">MJ</span>
+                    </div>
+                    <div class="face-sticker" style="--delay: 0.6s;">
+                        <img src="Rostos/imagem_2024-12-14_212048284.png" alt="Otavio">
+                        <span class="face-label">Octavios</span>
+                    </div>
+                    <div class="face-sticker" style="--delay: 0.9s;">
+                        <img src="Rostos/imagem_2024-12-14_212216243.png" alt="Kellyson">
+                        <span class="face-label">kelly kie</span>
+                    </div>
+                </div>
+                <p class="welcome-text">
+                    Desejamos que seu dia seja tão especial quanto você é para nós. 
+                    Que este novo ano de vida seja repleto de sorrisos, conquistas e momentos inesquecíveis.
+                    <br><br>
+                    Continue sendo essa pessoa incrível que você é, iluminando nossos dias com sua presença.
+                    <br><br>
+                    Feliz Aniversário e Feliz Natal! 🎄
+                </p>
+                <div class="welcome-signature">
+                    Com muito carinho,<br>
+                    <span class="signatures">
+                        <span class="signature-kellyson">kelly kie</span> • 
+                        <span class="signature-milenny">MJ</span> • 
+                        <span class="signature-otavio">Octavios</span>
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Adicionar imagem do livro favorito -->
+            <img 
+                src="stiker/8b9d708408cd7e0a9b4f47e7cd94d34c.jpg" 
+                alt="Livro Favorito da Helo" 
+                class="favorite-book-image"
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+        </div>
+
+    </main>
+
+    <div class="modal-overlay">
+        <div class="letter">
+            <button class="letter-close">&times;</button>
+            <div class="letter-content"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
