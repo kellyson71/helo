@@ -108,15 +108,15 @@ document.addEventListener('DOMContentLoaded', () => {
 // Função para configurar envelopes
 function setupEnvelopes() {
     const letters = {
-        1: "Querida Helo,\n\n💙 Você é uma pessoa incrível que traz luz para nossas vidas. Sua amizade é como um céu azul que nos inspira todos os dias.\n\nCom amor,\nKellyson 💫",
-        2: "Helo,\n\n⭐ Sua dedicação e força nos inspiram todos os dias. Você é como um raio de sol que ilumina nossos caminhos.\n\nCom carinho,\nOtavio ✨",
-        3: "Querida Helo,\n\n💜 Seu sorriso ilumina nossos dias. Sua criatividade e carinho tornam tudo mais especial e mágico.\n\nBeijos,\nMilenny 🌟"
+        1: "Oioi Helozinha,\n\n💜 Espero que você nunca esqueça que é muito especial pra mim. Obrigada por todas as risadas, brincadeiras, ajudas... todos os momentos no geral \n <3 Quero continuar sendo sua amiga por anos e anos.\n\nBeijos,\nMilenny 🌟",
+        2: "Querida Helo,\n\n⭐ Você é uma das pessoas mais legais que já conheci, e valorizo cada um dos momentos que vivemos juntos. Que nossa amizade não se acabe nunca. 😔🫶\n\nCom carinho,\nOtavio ✨",
+        3: "Querida Helo,\n\n💙 Eu sou realmente péssimo com palavras, mas, cara, não consigo pensar em outra palavra além de sorte. Sorte por ter te conhecido e sorte por ter você na minha vida. Sério, a cada dia que passa, fica ainda mais claro que, sem você, minha vida perderia uns 200% da graça, kkkk. Quando estou com você, tudo parece ganhar mais cor, mais brilho. Não importa se estamos só conversando bosta, rindo de qualquer coisa, ou até mesmo ouvindo você reclamar de tudo e de todos (inclusive de mimkkkk). É engraçado pensar que vc chegou na minha vida tãooo... Do nada? kkkkkkk, ciclos completamente diferentes, mas, ao mesmo tempo, parece que sempre esteve aqui. É engraçado pensar que, antes de você, eu nem sabia o que estava perdendo. Hoje, vc é algo que eu não consigo imaginar sem. Não importa o que aconteça, vc sempre transforma qualquer dia ruim em algo suportável, e qualquer dia bom em algo ainda melhor. Eu admiro tanto você. Sua força, suas conquistas, suas opiniões (mesmo quando são bem.... ne kkk), seu jeito sincero de enxergar as coisas... tudo em você me inspira. E, a cada dia, você se torna alguém ainda mais especial na minha vida, como uma irmã que eu escolhi ter. Não tem como não te amar por tudo isso e muito mais. Helo, quero que você saiba que é muito importante pra mim, e eu espero que nunca, jamais, esqueça disso. Te amo de verdade, e sou muito grato por ter você na minha vida. ❤️.\n\nCom amor,\nKellyson 💫"
     };
 
     const authors = {
-        1: "kellyson",
+        1: "milenny",
         2: "otavio",
-        3: "milenny"
+        3: "kellyson"
     };
 
     document.querySelectorAll('.envelope').forEach(envelope => {
